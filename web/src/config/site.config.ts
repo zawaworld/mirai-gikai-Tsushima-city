@@ -4,28 +4,29 @@
  * @see docs/kawasaki/20260304_1000_別地域向けfork手順.md
  */
 export const siteConfig = {
-  siteName: "みらい議会ー川崎版",
+  siteName: "みらい議会ー対馬市版",
   siteDescription:
-    "川崎市議会で今どんな議案が検討されているか、わかりやすく伝えるプラットフォームです",
-  cityName: "川崎市",
-  councilName: "川崎市議会",
+    "対馬市議会で今どんな議案が検討されているか、わかりやすく伝えるプラットフォームです",
+  cityName: "対馬市",
+  councilName: "対馬市議会",
   keywords: [
-    "みらい議会ー川崎版",
+    "みらい議会ー対馬市版",
     "議案",
-    "川崎市",
-    "市議会",
+    "対馬市",
+    "対馬市議会",
     "地方政治",
     "政策",
     "解説",
   ],
-  councilBaseUrl: "https://www.city.kawasaki.jp/",
+  councilBaseUrl: "https://www.city.tsushima.nagasaki.jp/",
   /** 議案・議決結果の一覧ページ */
   councilBillsDetailUrl:
-    "https://www.city.kawasaki.jp/shisei/category/40-7-25-0-0-0-0-0-0-0.html",
-  twitterHashtag: "みらい議会川崎版", // # なし
+    "https://www.city.tsushima.nagasaki.jp/gyousei/soshiki/gikaijimukyoku/gikai/gian-shingikekka/index.html",
+  twitterHashtag: "みらい議会対馬市版", // # なし
   externalLinks: {
-    report: "https://forms.gle/GM4oTN94ttPRjyjp9",
-    aboutNote: "",
+    // URL確定までは問題報告ボタンを表示しない。
+    report: "" as string,
+    aboutNote: "" as string,
     donation: "https://team-mir.ai/support/donation",
     teamAbout: "https://team-mir.ai/about",
     terms: "https://team-mir.ai/terms",
@@ -33,7 +34,7 @@ export const siteConfig = {
     faq: "https://team-mirai.notion.site/FAQ-28cf6f56bae180bd84e7f7ae80f806a1",
   },
   /**
-   * ページを管理する政党名（空文字列の場合は政党名を省略した汎用表現を使用）
+   * サイト運営主体の政党名（掲載する議員の党派・会派とは別）（空文字列の場合は政党名を省略した汎用表現を使用）
    * 例: "チームみらい"
    */
   managingParty: "" as string,
@@ -42,10 +43,11 @@ export const siteConfig = {
    * 利用規約や問い合わせ先に使用します。
    */
   operator: {
-    name: "GondoTakashi" as string,
-    contactUrl: "https://x.com/TakashiGondo" as string,
+    name: "zawa" as string,
+    contactUrl:
+      "https://line.me/ti/g2/jB92wCayPVojpYscH42i_HTECc7qDsRgfmDskQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" as string,
     /** 利用規約の準拠法・管轄裁判所（第一審の専属的合意管轄） */
-    jurisdiction: "横浜地方裁判所" as string,
+    jurisdiction: "長崎地方裁判所" as string,
   },
   /**
    * AI機能の有効/無効設定

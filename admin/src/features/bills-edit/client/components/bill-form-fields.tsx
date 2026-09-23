@@ -1,5 +1,6 @@
 "use client";
 
+import { siteConfig } from "@/config/site.config";
 import { type Control, useFormContext, useWatch } from "react-hook-form";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -290,7 +291,7 @@ export function BillFormFields({
             <FormControl>
               <Input
                 type="url"
-                placeholder="https://www.city.kawasaki.jp/..."
+                placeholder={`${siteConfig.councilBaseUrl}...`}
                 {...field}
                 value={field.value ?? ""}
               />

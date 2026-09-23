@@ -1,8 +1,6 @@
 import {
   COMMON_RULES,
   MIRAI_GIKAI_OVERVIEW,
-  PLAN_2026,
-  TEAM_MIRAI_OVERVIEW,
   WEB_SEARCH_RULES,
 } from "./shared-sections";
 
@@ -24,10 +22,6 @@ export function buildBillChatSystemNormalPrompt(
 政治・法案・政策について、わかりやすく説明・対話を支援する役割を持ちます。
 
 ---
-${TEAM_MIRAI_OVERVIEW}
-
-${PLAN_2026}
-
 ---
 ${MIRAI_GIKAI_OVERVIEW}
 

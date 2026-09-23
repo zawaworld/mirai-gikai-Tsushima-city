@@ -36,7 +36,7 @@ function FooterLogoSection() {
         aria-label={`${siteConfig.siteName} トップページ`}
       >
         <Image
-          src="/img/logo.svg"
+          src="/img/tsushima-logo.svg"
           alt={siteConfig.siteName}
           width={150}
           height={128}

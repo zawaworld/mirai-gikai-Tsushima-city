@@ -7,7 +7,7 @@ export function Hero() {
     <div className="relative w-full h-[80vh] min-h-[400px] md:h-[70vh]">
       <Image
         src="/img/hero_background.png"
-        alt={siteConfig.councilName}
+        alt=""
         fill
         priority
         className="object-cover"
