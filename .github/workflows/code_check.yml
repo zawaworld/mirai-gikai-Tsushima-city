@@ -1,10 +1,10 @@
-name: Code Check kawasaki/develop
+name: Code Check Tsushima-city/develop
 
 on:
   push:
-    branches: [kawasaki/develop]
+    branches: [Tsushima-city/develop]
   pull_request:
-    branches: [kawasaki/develop]
+    branches: [Tsushima-city/develop]
 
 jobs:
   lint-and-typecheck:

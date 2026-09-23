@@ -15,7 +15,7 @@ export function DesktopMenuLogo() {
       {/* ロゴ */}
       <div className="relative w-[116px] h-[98.38px]">
         <Image
-          src="/img/logo.svg"
+          src="/img/tsushima-logo.svg"
           alt={`${siteConfig.siteName}ロゴ`}
           fill
           className="object-contain"

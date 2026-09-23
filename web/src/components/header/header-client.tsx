@@ -35,7 +35,7 @@ export function HeaderClient({ difficultyLevel, sessions }: HeaderClientProps) {
             >
               {siteConfig.features.showTeamMiraiSection && (
                 <Image
-                  src="/img/logo.svg"
+                  src="/img/tsushima-logo.svg"
                   alt={siteConfig.siteName}
                   width={42}
                   height={36}
