@@ -9,6 +9,7 @@
 export const routes = {
   // ── 静的ルート ──────────────────────────────────────
   home: () => "/" as const,
+  speechesPreview: () => "/dev/speeches" as const,
   terms: () => "/terms" as const,
   privacy: () => "/privacy" as const,
 

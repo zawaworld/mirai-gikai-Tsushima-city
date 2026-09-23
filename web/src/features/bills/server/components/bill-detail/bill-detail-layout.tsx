@@ -1,6 +1,7 @@
 import { Container } from "@/components/layouts/container";
 import { siteConfig } from "@/config/site.config";
 import type { DifficultyLevelEnum } from "@/features/bill-difficulty/shared/types";
+import { BillSpeechesSection } from "@/features/bill-speeches/server/components/bill-speeches-section";
 import { InterviewLandingSection } from "@/features/interview-config/client/components/interview-landing-section";
 import { getInterviewConfig } from "@/features/interview-config/server/loaders/get-interview-config";
 import { BillInterviewOpinionsSection } from "@/features/interview-report/server/components/bill-interview-opinions-section";
@@ -86,6 +87,9 @@ export async function BillDetailLayout({
             />
           </div>
         )}
+        <div className="my-8">
+          <BillSpeechesSection billId={bill.id} />
+        </div>
         {/* シェアボタン */}
         <div className="my-8">
           <BillShareButtons bill={bill} />

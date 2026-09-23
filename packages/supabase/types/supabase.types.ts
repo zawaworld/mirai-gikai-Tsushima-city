@@ -93,6 +93,80 @@ export type Database = {
           },
         ]
       }
+      bill_speeches: {
+        Row: {
+          bill_id: string
+          content: string
+          created_at: string
+          faction_name: string
+          id: string
+          is_published: boolean
+          meeting_date: string
+          meeting_name: string
+          party_name: string
+          sort_order: number
+          source_locator: string
+          source_title: string
+          source_url: string
+          speaker_name: string
+          speaker_role: string
+          speech_type: string
+          stance: string
+          summary: string
+          updated_at: string
+        }
+        Insert: {
+          bill_id: string
+          content: string
+          created_at?: string
+          faction_name?: string
+          id?: string
+          is_published?: boolean
+          meeting_date: string
+          meeting_name: string
+          party_name?: string
+          sort_order?: number
+          source_locator?: string
+          source_title: string
+          source_url: string
+          speaker_name: string
+          speaker_role?: string
+          speech_type: string
+          stance?: string
+          summary?: string
+          updated_at?: string
+        }
+        Update: {
+          bill_id?: string
+          content?: string
+          created_at?: string
+          faction_name?: string
+          id?: string
+          is_published?: boolean
+          meeting_date?: string
+          meeting_name?: string
+          party_name?: string
+          sort_order?: number
+          source_locator?: string
+          source_title?: string
+          source_url?: string
+          speaker_name?: string
+          speaker_role?: string
+          speech_type?: string
+          stance?: string
+          summary?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "bill_speeches_bill_id_fkey"
+            columns: ["bill_id"]
+            isOneToOne: false
+            referencedRelation: "bills"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       bills: {
         Row: {
           bill_number: string

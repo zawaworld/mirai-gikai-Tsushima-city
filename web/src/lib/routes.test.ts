@@ -83,7 +83,9 @@ describe("routes", () => {
   // routes.ts の正規化済みルート（preview は本体パスに統合）
   const normalizedDefinedRoutes = [
     ...new Set(
-      definedRoutes.map((r) => normalizeAppRoute(r.replace(/^\/preview/, "")))
+      definedRoutes
+        .filter((r) => !r.startsWith("/dev"))
+        .map((r) => normalizeAppRoute(r.replace(/^\/preview/, "")))
     ),
   ].sort();
 
